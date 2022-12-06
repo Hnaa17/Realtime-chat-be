@@ -10,14 +10,12 @@ create table users (
     bio varchar(255),
     phone varchar(15),
     created_at date,
-    date date
 );
 
 create table grup(
     id varchar primary key,
     name_grup varchar(50),
     created_at date,
-    date date,
     photo varchar,
     sender varchar,
     message varchar
@@ -29,7 +27,6 @@ create table messages(
     receiver_id varchar not null,
     message varchar,
     created_at date,
-    date date,
     sender varchar,
     photo varchar
 );
